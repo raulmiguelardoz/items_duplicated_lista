@@ -1,0 +1,14 @@
+def items_duplicate(lista):
+    rep=[]
+    for i in lista:
+        if i not in rep:
+            rep.append(i)
+    if len(rep)!=len(lista):
+        print(True)
+    else:
+        print(False)
+       
+
+items_duplicate([1, 2, 3, 4, 5])    
+items_duplicate([1, 2, 3, 4, 5, 5])    
+items_duplicate([1, 2, 3, 2]) 
